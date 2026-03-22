@@ -23,3 +23,12 @@ def test_process_item_empty():
 
     # nothing saved if it fails
     assert len(DATABASE) == 0
+
+
+@pytest.mark.spy
+def test_database_crash():
+    DATABASE.clear()  # or DATABASE = []
+
+    result = process_item({"name": "banana"})
+
+    assert result == "ok"
