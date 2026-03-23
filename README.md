@@ -25,4 +25,9 @@ Completed the following exercises:
     ```commandline  
     🟢  pytest src/tests/unit/test_memberservice_unit.py  ✅ Passed
     ```
+   
+3. Shopping Cart / integration test
+    ```commandline  
+    🟢  pytest src/tests/integration/test_shopping_cart_integration.py  ✅ Passed
+    ```
 
